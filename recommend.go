@@ -70,7 +70,7 @@ if(cmd == "new"){
                 if Recommend_param[8] == 1{
                     like_list_recent[v]= float64(Recommend_param[6])
                 }else if Recommend_param[8] == 2{
-                    like_list_recent[v]= float64(Recommend_param[7]-(len(like_listt)-idx+1)) * float64(Recommend_param[6]) / float64(Recommend_param[7])
+                    like_list_recent[v]= float64(Recommend_param[7]-(len(like_listt)-(idx+1))) * float64(Recommend_param[6]) / float64(Recommend_param[7])
                 }else{
                     like_list_recent[v]= float64(Recommend_param[6])
                 }
