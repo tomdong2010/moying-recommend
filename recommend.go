@@ -144,9 +144,9 @@ if(cmd == "new"){
         _ = fav_vid
 
         if Recommend_param[6]!= 0{
-            _,isrecent := like_list_recent[id1]
+            score_t,isrecent := like_list_recent[id1]
             if isrecent {
-                score0 += float64(Recommend_param[6])
+                score0 += float64(score_t)
             }
         }
                 
